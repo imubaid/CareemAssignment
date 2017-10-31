@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00B6A8431FA7A0BE008E8EAF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B6A8421FA7A0BE008E8EAF /* AppDelegate.m */; };
+		00B6A8491FA7A0BE008E8EAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00B6A8471FA7A0BE008E8EAF /* Main.storyboard */; };
+		00B6A84B1FA7A0BE008E8EAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00B6A84A1FA7A0BE008E8EAF /* Assets.xcassets */; };
+		00B6A84E1FA7A0BE008E8EAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00B6A84C1FA7A0BE008E8EAF /* LaunchScreen.storyboard */; };
+		00B6A8511FA7A0BE008E8EAF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B6A8501FA7A0BE008E8EAF /* main.m */; };
+		00B6A85D1FA7A2F6008E8EAF /* BaseHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B6A85C1FA7A2F6008E8EAF /* BaseHttpClient.m */; };
+		00B6A8621FA7A3E1008E8EAF /* MoviesRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B6A8611FA7A3E1008E8EAF /* MoviesRequestHandler.m */; };
+		00B6A8671FA7AB58008E8EAF /* MovieModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B6A8661FA7AB58008E8EAF /* MovieModel.m */; };
+		00B6A86C1FA7B235008E8EAF /* MovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B6A86B1FA7B235008E8EAF /* MovieCell.m */; };
+		00B6A86F1FA7B2C7008E8EAF /* MoviewSearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B6A86E1FA7B2C7008E8EAF /* MoviewSearchVC.m */; };
+		00C80A041FA7C65F00C5D859 /* SuggestionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C80A031FA7C65F00C5D859 /* SuggestionManager.m */; };
+		9CE758FBA309F5BBFC05F75B /* libPods-CareemAssignment.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA88CE565D6B30C23B73E2A /* libPods-CareemAssignment.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00B6A83E1FA7A0BE008E8EAF /* CareemAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CareemAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00B6A8411FA7A0BE008E8EAF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		00B6A8421FA7A0BE008E8EAF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		00B6A8481FA7A0BE008E8EAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		00B6A84A1FA7A0BE008E8EAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00B6A84D1FA7A0BE008E8EAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		00B6A84F1FA7A0BE008E8EAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00B6A8501FA7A0BE008E8EAF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		00B6A85A1FA7A2F6008E8EAF /* BaseApiConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseApiConstants.h; sourceTree = "<group>"; };
+		00B6A85B1FA7A2F6008E8EAF /* BaseHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseHttpClient.h; sourceTree = "<group>"; };
+		00B6A85C1FA7A2F6008E8EAF /* BaseHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseHttpClient.m; sourceTree = "<group>"; };
+		00B6A8601FA7A3E1008E8EAF /* MoviesRequestHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoviesRequestHandler.h; sourceTree = "<group>"; };
+		00B6A8611FA7A3E1008E8EAF /* MoviesRequestHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoviesRequestHandler.m; sourceTree = "<group>"; };
+		00B6A8651FA7AB58008E8EAF /* MovieModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieModel.h; sourceTree = "<group>"; };
+		00B6A8661FA7AB58008E8EAF /* MovieModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieModel.m; sourceTree = "<group>"; };
+		00B6A86A1FA7B235008E8EAF /* MovieCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieCell.h; sourceTree = "<group>"; };
+		00B6A86B1FA7B235008E8EAF /* MovieCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieCell.m; sourceTree = "<group>"; };
+		00B6A86D1FA7B2C7008E8EAF /* MoviewSearchVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoviewSearchVC.h; sourceTree = "<group>"; };
+		00B6A86E1FA7B2C7008E8EAF /* MoviewSearchVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoviewSearchVC.m; sourceTree = "<group>"; };
+		00B6A8711FA7B498008E8EAF /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		00C80A021FA7C65F00C5D859 /* SuggestionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuggestionManager.h; sourceTree = "<group>"; };
+		00C80A031FA7C65F00C5D859 /* SuggestionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuggestionManager.m; sourceTree = "<group>"; };
+		317F305BB61A83D1AA6F60CF /* Pods-CareemAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareemAssignment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CareemAssignment/Pods-CareemAssignment.debug.xcconfig"; sourceTree = "<group>"; };
+		6EA88CE565D6B30C23B73E2A /* libPods-CareemAssignment.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CareemAssignment.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB31318BF7AD0653D8B92D02 /* Pods-CareemAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareemAssignment.release.xcconfig"; path = "Pods/Target Support Files/Pods-CareemAssignment/Pods-CareemAssignment.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00B6A83B1FA7A0BE008E8EAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CE758FBA309F5BBFC05F75B /* libPods-CareemAssignment.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00B6A8351FA7A0BE008E8EAF = {
+			isa = PBXGroup;
+			children = (
+				00B6A8401FA7A0BE008E8EAF /* CareemAssignment */,
+				00B6A83F1FA7A0BE008E8EAF /* Products */,
+				3465784D66711D90A03C0830 /* Pods */,
+				68820C67BEE24D796BB2FB88 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		00B6A83F1FA7A0BE008E8EAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00B6A83E1FA7A0BE008E8EAF /* CareemAssignment.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00B6A8401FA7A0BE008E8EAF /* CareemAssignment */ = {
+			isa = PBXGroup;
+			children = (
+				00C80A001FA7C5F800C5D859 /* Manager */,
+				00B6A8701FA7B482008E8EAF /* Constants */,
+				00B6A8631FA7AB3A008E8EAF /* Models */,
+				00B6A85E1FA7A3A0008E8EAF /* RequestHandlers */,
+				00B6A8591FA7A109008E8EAF /* Http */,
+				00B6A8581FA7A0FE008E8EAF /* ViewControllers */,
+				00B6A8571FA7A0EB008E8EAF /* AppDelegate */,
+				00B6A8471FA7A0BE008E8EAF /* Main.storyboard */,
+				00B6A84A1FA7A0BE008E8EAF /* Assets.xcassets */,
+				00B6A84C1FA7A0BE008E8EAF /* LaunchScreen.storyboard */,
+				00B6A84F1FA7A0BE008E8EAF /* Info.plist */,
+				00B6A8501FA7A0BE008E8EAF /* main.m */,
+			);
+			path = CareemAssignment;
+			sourceTree = "<group>";
+		};
+		00B6A8571FA7A0EB008E8EAF /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				00B6A8411FA7A0BE008E8EAF /* AppDelegate.h */,
+				00B6A8421FA7A0BE008E8EAF /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		00B6A8581FA7A0FE008E8EAF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				00B6A8681FA7B204008E8EAF /* MovieSearchVC */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		00B6A8591FA7A109008E8EAF /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				00B6A85A1FA7A2F6008E8EAF /* BaseApiConstants.h */,
+				00B6A85B1FA7A2F6008E8EAF /* BaseHttpClient.h */,
+				00B6A85C1FA7A2F6008E8EAF /* BaseHttpClient.m */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		00B6A85E1FA7A3A0008E8EAF /* RequestHandlers */ = {
+			isa = PBXGroup;
+			children = (
+				00B6A85F1FA7A3B4008E8EAF /* MoviesRequestHandler */,
+			);
+			path = RequestHandlers;
+			sourceTree = "<group>";
+		};
+		00B6A85F1FA7A3B4008E8EAF /* MoviesRequestHandler */ = {
+			isa = PBXGroup;
+			children = (
+				00B6A8601FA7A3E1008E8EAF /* MoviesRequestHandler.h */,
+				00B6A8611FA7A3E1008E8EAF /* MoviesRequestHandler.m */,
+			);
+			path = MoviesRequestHandler;
+			sourceTree = "<group>";
+		};
+		00B6A8631FA7AB3A008E8EAF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				00B6A8641FA7AB40008E8EAF /* MovieModel */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		00B6A8641FA7AB40008E8EAF /* MovieModel */ = {
+			isa = PBXGroup;
+			children = (
+				00B6A8651FA7AB58008E8EAF /* MovieModel.h */,
+				00B6A8661FA7AB58008E8EAF /* MovieModel.m */,
+			);
+			path = MovieModel;
+			sourceTree = "<group>";
+		};
+		00B6A8681FA7B204008E8EAF /* MovieSearchVC */ = {
+			isa = PBXGroup;
+			children = (
+				00B6A8691FA7B218008E8EAF /* Cell */,
+				00B6A86D1FA7B2C7008E8EAF /* MoviewSearchVC.h */,
+				00B6A86E1FA7B2C7008E8EAF /* MoviewSearchVC.m */,
+			);
+			path = MovieSearchVC;
+			sourceTree = "<group>";
+		};
+		00B6A8691FA7B218008E8EAF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				00B6A86A1FA7B235008E8EAF /* MovieCell.h */,
+				00B6A86B1FA7B235008E8EAF /* MovieCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		00B6A8701FA7B482008E8EAF /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				00B6A8711FA7B498008E8EAF /* Constants.h */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		00C80A001FA7C5F800C5D859 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				00C80A011FA7C60300C5D859 /* SuggestionsManager */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		00C80A011FA7C60300C5D859 /* SuggestionsManager */ = {
+			isa = PBXGroup;
+			children = (
+				00C80A021FA7C65F00C5D859 /* SuggestionManager.h */,
+				00C80A031FA7C65F00C5D859 /* SuggestionManager.m */,
+			);
+			path = SuggestionsManager;
+			sourceTree = "<group>";
+		};
+		3465784D66711D90A03C0830 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				317F305BB61A83D1AA6F60CF /* Pods-CareemAssignment.debug.xcconfig */,
+				FB31318BF7AD0653D8B92D02 /* Pods-CareemAssignment.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		68820C67BEE24D796BB2FB88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EA88CE565D6B30C23B73E2A /* libPods-CareemAssignment.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00B6A83D1FA7A0BE008E8EAF /* CareemAssignment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00B6A8541FA7A0BE008E8EAF /* Build configuration list for PBXNativeTarget "CareemAssignment" */;
+			buildPhases = (
+				CB9E2399E064799C0AEDB563 /* [CP] Check Pods Manifest.lock */,
+				00B6A83A1FA7A0BE008E8EAF /* Sources */,
+				00B6A83B1FA7A0BE008E8EAF /* Frameworks */,
+				00B6A83C1FA7A0BE008E8EAF /* Resources */,
+				9041E849090678442B8CE59B /* [CP] Embed Pods Frameworks */,
+				51DC29A14C2E89405E07BB65 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CareemAssignment;
+			productName = CareemAssignment;
+			productReference = 00B6A83E1FA7A0BE008E8EAF /* CareemAssignment.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00B6A8361FA7A0BE008E8EAF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Ubaid  ur Rahman";
+				TargetAttributes = {
+					00B6A83D1FA7A0BE008E8EAF = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 00B6A8391FA7A0BE008E8EAF /* Build configuration list for PBXProject "CareemAssignment" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00B6A8351FA7A0BE008E8EAF;
+			productRefGroup = 00B6A83F1FA7A0BE008E8EAF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00B6A83D1FA7A0BE008E8EAF /* CareemAssignment */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00B6A83C1FA7A0BE008E8EAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00B6A84E1FA7A0BE008E8EAF /* LaunchScreen.storyboard in Resources */,
+				00B6A84B1FA7A0BE008E8EAF /* Assets.xcassets in Resources */,
+				00B6A8491FA7A0BE008E8EAF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		51DC29A14C2E89405E07BB65 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CareemAssignment/Pods-CareemAssignment-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9041E849090678442B8CE59B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CareemAssignment/Pods-CareemAssignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB9E2399E064799C0AEDB563 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00B6A83A1FA7A0BE008E8EAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00B6A8511FA7A0BE008E8EAF /* main.m in Sources */,
+				00C80A041FA7C65F00C5D859 /* SuggestionManager.m in Sources */,
+				00B6A86F1FA7B2C7008E8EAF /* MoviewSearchVC.m in Sources */,
+				00B6A8431FA7A0BE008E8EAF /* AppDelegate.m in Sources */,
+				00B6A86C1FA7B235008E8EAF /* MovieCell.m in Sources */,
+				00B6A85D1FA7A2F6008E8EAF /* BaseHttpClient.m in Sources */,
+				00B6A8671FA7AB58008E8EAF /* MovieModel.m in Sources */,
+				00B6A8621FA7A3E1008E8EAF /* MoviesRequestHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		00B6A8471FA7A0BE008E8EAF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00B6A8481FA7A0BE008E8EAF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		00B6A84C1FA7A0BE008E8EAF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00B6A84D1FA7A0BE008E8EAF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00B6A8521FA7A0BE008E8EAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		00B6A8531FA7A0BE008E8EAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00B6A8551FA7A0BE008E8EAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 317F305BB61A83D1AA6F60CF /* Pods-CareemAssignment.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R2KS3KX7ZU;
+				INFOPLIST_FILE = CareemAssignment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bigOtech.CareemAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		00B6A8561FA7A0BE008E8EAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB31318BF7AD0653D8B92D02 /* Pods-CareemAssignment.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R2KS3KX7ZU;
+				INFOPLIST_FILE = CareemAssignment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bigOtech.CareemAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00B6A8391FA7A0BE008E8EAF /* Build configuration list for PBXProject "CareemAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00B6A8521FA7A0BE008E8EAF /* Debug */,
+				00B6A8531FA7A0BE008E8EAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00B6A8541FA7A0BE008E8EAF /* Build configuration list for PBXNativeTarget "CareemAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00B6A8551FA7A0BE008E8EAF /* Debug */,
+				00B6A8561FA7A0BE008E8EAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00B6A8361FA7A0BE008E8EAF /* Project object */;
+}
